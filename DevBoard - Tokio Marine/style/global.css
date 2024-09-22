@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url("./reset.css");
-@import url("./cards.css");
 
 :root {
     --max-width-desktop: 1080px;
     --cor-primaria: #2070f5;
+    --cor-segundaria: #090023;
 }
 
-header,
-main,
+.header,
+.main,
 .footer__container {
     width: var(--max-width-desktop);
     margin: 0 auto;
@@ -20,8 +20,8 @@ main,
     padding: 18px 0;
     display: flex;
     align-items: center;
-    gap: 60px;
-    border-bottom: 1px solid var(--cor-primaria);
+    justify-content: space-between;
+    border-bottom: 1.5px solid var(--cor-primaria);
 }
 
 .header__links {
@@ -34,12 +34,8 @@ main,
     color: var(--cor-primaria);
 }
 
-main {
-    height: 80vh;
-}
-
-footer {
-    background-color: #090023;
+.footer {
+    background-color: var(--cor-segundaria);
     color: #ffffff;
     padding: 30px 0;
 }
@@ -77,12 +73,7 @@ footer {
     gap: 6px;
 }
 
-.footer__logos {
-    display: flex;
-    gap: 20px;
-}
-
 .footer__logo {
-    width: 250px;
+    width: 300px;
     height: auto;
 }
