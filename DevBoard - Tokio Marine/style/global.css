@@ -34,6 +34,10 @@
     color: var(--cor-primaria);
 }
 
+.main {
+    padding: 60px 0;
+}
+
 .footer {
     background-color: var(--cor-segundaria);
     color: #ffffff;
